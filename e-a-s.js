@@ -81,7 +81,7 @@ function removeOldGrid() { //this clean the grid
 }
 function newGrid() { //this function change the size of the grid
     let newRow = prompt('select new size (1-40)');
-    if (newRow > 40 || newRow < 0 || newRow == 0) {
+    if (newRow > 40 || newRow < 0 || newRow == 0 || newRow == undefined) {
         alert('Please select a number between 1-40');
         location.reload();
     }
